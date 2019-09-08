@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Home - Wash A Spoon</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel = "icon" href = "img/favicon.ico" type ="img/x-icon">
+   </head>
+   <body background = "img/kitchenclean.jpg">
+       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+      <section>
+         <h1>Wash A Spoon</h1>
+         <p>Welcome to the interactive, pick your path website! Take a journey of a stress-free morning or hectic start to your morning. The mission is successfully clean your spoon in the morning without getting splash because let’s be real here we all have washed a spoon and at least once splashed yourself. This is where you can take that path and have no consequences. </p>
+         <div class="row">
+         <div class="tcolumn">
+            <div class ="zoom">
+               <a href= "characters.html"><img src="img/advent.png" style="width:65%"></a>
+            </div>
+            <figcaption>
+               <h3>Start your Adventure</h3>
+            </figcaption>
+         </div>
+         <div class="tcolumn">
+            <div class ="zoom">
+               <a href= "About.html"><img src="img/about.png" style="width:70%"></a>
+            </div>
+            <figcaption>
+               <center>
+                  <h3>About this Website</h3>
+               </center>
+            </figcaption>
+         </div>
+		</div>
+		<center>
+		<p>Tanya Putthapipat - 300412214</p>
+  		<p>Contact information: <a href="mailto:tanyaputthapipat123@gmail.com" target="_blank">tanyaputthapipat123@gmail.com</a>.</p>
+  		<br>
+		
+		<p>Published:</p>
+            <p id="demo"></p>
+
+            <script>
+                var d = new Date(86400000);
+                document.getElementById("demo").innerHTML = d;
+            </script>
+		</center>
+		<br><br><br>
+      </section>
+   </body>
+</html>
